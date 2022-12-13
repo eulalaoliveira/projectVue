@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <PrimeiroComponente />
     <p>O dado de app é {{ testando }}</p>
     <LifeCycle />
@@ -11,13 +12,15 @@
   import PrimeiroComponente from "../src/components/PrimeiroComponente.vue" 
   import LifeCycle from "../src/components/LifeCycle.vue"
   import Pessoa from './components/Pessoa.vue'
+  import Header from "./components/Header.vue"
 
   export default {
     name: "app",
     components: {
+      Header,
       PrimeiroComponente,
       LifeCycle,
-        Pessoa
+      Pessoa
     },
     data() {
         return {
