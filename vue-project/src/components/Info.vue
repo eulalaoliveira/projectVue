@@ -30,11 +30,13 @@ import Picture from "../components/Picture.vue"
         components: {
             Picture
         },
+        props: {
+            email: String,
+            esta_trabalhando: Boolean
+        },
         data() {
             return {
-                esta_trabalhando: false,
                 mostrar_email: false,
-                email: "larissa@gmail.com",
                 meu_link: "https://google.com",
                 textoBotao: "Mostrar e-mail",
                 backend_technologies: ["JavaScript", "PHP", "Python"],
